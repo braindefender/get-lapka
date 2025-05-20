@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лапка. Batch 01</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="side-content">
+      <div class="title">Лапка. Batch 01</div>
+
+      <img src="./assets/logo.svg" alt="Лапка" class="logo" />
+
+      <div class="container-side">
+        <div class="title">Как заказать</div>
+        <div class="subtitle">
+          Написать
+          <a class="link" href="https://t.me/braindefender">@braindefender</a> в
+          Telegram
+          <br />
+          сообщение следующего вида:
+        </div>
+        <textarea class="post" name="post" id="post"></textarea>
+        <div class="buttons">
+          <button class="copy" type="button" onclick="copy();">
+            Скопировать
+          </button>
+          <a class="copy" href="https://t.me/braindefender"> Написать </a>
+        </div>
+      </div>
+
+      <div class="subtitle dimmed">
+        Не является офертой-хуертой.<br />Просто инфа для простых людей
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="container">
+        <div class="title">① Виды свитчей</div>
+        <div class="subtitle">
+          Для Choc стема подойдут и остальные Choc-совместимые кейкапы, а для MX
+          стема только KLP Lamé
+        </div>
+        <div class="blocks">
+          <div class="block" onclick="onSelect('switches', 'choc-v1-red-pro')">
+            <img
+              class="image"
+              src="./assets/switches/choc-v1-red-pro.jpg"
+              alt="Choc v1 Red Pro"
+            />
+            <div class="bullets">
+              <div class="bullet">
+                <div class="key">Тип</div>
+                <div class="value">Линейные</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Сила нажатия</div>
+                <div class="value">35gf</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Звук</div>
+                <div class="value">Обычный</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Стем</div>
+                <div class="value">Choc</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="block"
+            onclick="onSelect('switches', 'choc-v2-deep-sea-pink')"
+          >
+            <img
+              class="image"
+              src="./assets/switches/choc-v2-deep-sea-islet-pink.jpg"
+              alt="Choc v2 Deep Sea Islet Pink"
+            />
+            <div class="bullets">
+              <div class="bullet">
+                <div class="key">Тип</div>
+                <div class="value">Линейные</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Сила нажатия</div>
+                <div class="value">35gf</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Звук</div>
+                <div class="value">Тихий</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Стем</div>
+                <div class="value">MX</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="block"
+            onclick="onSelect('switches', 'choc-v2-deep-sea-white')"
+          >
+            <img
+              class="image"
+              src="./assets/switches/choc-v2-deep-sea-islet-white.jpg"
+              alt="Choc v2 Deep Sea Islet White"
+            />
+            <div class="bullets">
+              <div class="bullet">
+                <div class="key">Тип</div>
+                <div class="value">Линейные</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Сила нажатия</div>
+                <div class="value">45gf</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Звук</div>
+                <div class="value">Тихий</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Стем</div>
+                <div class="value">MX</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="title">② Цвета корпуса</div>
+        <div class="subtitle">
+          Можно миксовать цвета для различных деталей: матрицы, тамб-кластера и
+          крышки контроллера
+        </div>
+        <div class="blocks">
+          <div class="block" onclick="onSelect('caseColor', 'pla-matte-white')">
+            <img
+              class="image"
+              src="./assets/case-fdm/eryone-pla-matte-white.jpg"
+              alt="Eryone PLA Matte White"
+            />
+            <div class="bullets">
+              <div class="bullet">
+                <div class="key">Тип</div>
+                <div class="value">PLA</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Цвет</div>
+                <div class="value">Белый</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Поверхность</div>
+                <div class="value">Матовая</div>
+              </div>
+            </div>
+          </div>
+          <div class="block" onclick="onSelect('caseColor', 'pla-matte-black')">
+            <img
+              class="image"
+              src="./assets/case-fdm/eryone-pla-matte-black.jpg"
+              alt="Eryone PLA Matte Black"
+            />
+            <div class="bullets">
+              <div class="bullet">
+                <div class="key">Тип</div>
+                <div class="value">PLA</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Цвет</div>
+                <div class="value">Чёрный</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Поверхность</div>
+                <div class="value">Матовая</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="block"
+            onclick="onSelect('caseColor', 'pla-matte-sky-blue')"
+          >
+            <img
+              class="image"
+              src="./assets/case-fdm/eryone-pla-matte-sky-blue.jpg"
+              alt="Eryone PLA Matte Sky Blue"
+            />
+            <div class="bullets">
+              <div class="bullet">
+                <div class="key">Тип</div>
+                <div class="value">PLA</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Цвет</div>
+                <div class="value">Голубой</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Поверхность</div>
+                <div class="value">Матовая</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="block"
+            onclick="onSelect('caseColor', 'petg-galaxy-purple')"
+          >
+            <img
+              class="image"
+              src="./assets/case-fdm/eryone-petg-galaxy-purple.jpg"
+              alt="Eryone PETG Galaxy Purple"
+            />
+            <div class="bullets">
+              <div class="bullet">
+                <div class="key">Тип</div>
+                <div class="value">PETG</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Цвет</div>
+                <div class="value">Galaxy Purple</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Поверхность</div>
+                <div class="value">Глянцевая</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="title">③ Цвета кейкапов</div>
+        <div class="subtitle">
+          На полупрозрачных смолах отчётливо виден стем кейкапа. Кейкапы черного
+          цвета можно приобрести у
+          <a href="https://t.me/ergosplits">@ergosplits</a>
+        </div>
+        <div class="blocks">
+          <div class="block" onclick="onSelect('keycapColor', 'water-green')">
+            <img
+              class="image"
+              src="./assets/keycaps-sla/elegoo-water-washable-green.jpg"
+              alt="ELEGOO Water Washable Green"
+            />
+            <div class="bullets">
+              <div class="bullet">
+                <div class="key">Цвет</div>
+                <div class="value">Зелёный</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Тип</div>
+                <div class="value">Полупрозрачный</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Прочность</div>
+                <div class="value">Средняя</div>
+              </div>
+            </div>
+          </div>
+          <div class="block" onclick="onSelect('keycapColor', 'water-black')">
+            <img
+              class="image"
+              src="./assets/keycaps-sla/elegoo-water-washable-smoky-black.jpg"
+              alt="ELEGOO Water Washable Smoky Black"
+            />
+            <div class="bullets">
+              <div class="bullet">
+                <div class="key">Цвет</div>
+                <div class="value">Иссиня-чёрный</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Тип</div>
+                <div class="value">Полупрозрачный</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Прочность</div>
+                <div class="value">Средняя</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="block"
+            onclick="onSelect('keycapColor', 'water-clear-blue')"
+          >
+            <img
+              class="image"
+              src="./assets/keycaps-sla/elegoo-water-washable-clear-blue.jpg"
+              alt="ELEGOO Water Washable Clear Blue"
+            />
+            <div class="bullets">
+              <div class="bullet">
+                <div class="key">Цвет</div>
+                <div class="value">Голубой</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Тип</div>
+                <div class="value">Полупрозрачный</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Прочность</div>
+                <div class="value">Средняя</div>
+              </div>
+            </div>
+          </div>
+          <div class="block" onclick="onSelect('keycapColor', 'tough-white')">
+            <img
+              class="image"
+              src="./assets/keycaps-sla/sunlu-toughness-white.jpg"
+              alt="SUNLU Toughness White"
+            />
+            <div class="bullets">
+              <div class="bullet">
+                <div class="key">Цвет</div>
+                <div class="value">Белый</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Тип</div>
+                <div class="value">Непрозрачный</div>
+              </div>
+              <div class="bullet">
+                <div class="key">Прочность</div>
+                <div class="value">Высокая</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="title">④ Дополнения</div>
+        <div class="blocks">
+          <div class="item">
+            <div class="title">Силиконовые ножки</div>
+            <div class="subtitle">
+              С ними клавиатура не скользит<br />по столу или коврику
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">Магнитный кабель</div>
+            <div class="subtitle">
+              Удобный способ зарядки клавиатуры.<br />С ним корпус держится
+              более надёжно
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">Bluetooth-донгл</div>
+            <div class="subtitle">
+              Увеличит срок работы от батареи,<br />и упростит прошивку
+              клавиатуры.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
