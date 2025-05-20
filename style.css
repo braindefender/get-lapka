@@ -197,3 +197,24 @@ a:visited {
   flex-direction: column;
   gap: 10px;
 }
+
+@media only screen and (max-width: 800px) {
+  body {
+    flex-direction: column;
+  }
+
+  .side-content {
+    position: static;
+    padding: 20px;
+    width: 100vw;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .blocks {
+    flex-direction: column;
+  }
+}
