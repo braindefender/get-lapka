@@ -15,9 +15,9 @@ const caseColors = {
 };
 
 const keycapColors = {
-  "water-green": "Зелёные Прозрачные",
-  "water-black": "Иссиня-чёрные Прозрачные",
-  "water-clear-blue": "Голубые Прозрачные",
+  "water-green": "Зелёные Полупрозрачные",
+  "water-black": "Иссиня-чёрные Полупрозрачные",
+  "water-clear-blue": "Голубые Полупрозрачные",
   "tough-white": "Белые Непрозрачные",
 };
 
