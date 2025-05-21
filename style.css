@@ -126,6 +126,13 @@ a:visited {
   margin-top: 48px;
 }
 
+.blocks-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 240px);
+  gap: 40px;
+  margin-top: 48px;
+}
+
 .block {
   position: relative;
   display: flex;
@@ -144,10 +151,28 @@ a:visited {
 }
 
 .image {
-  width: 230px;
-  height: 230px;
+  width: 240px;
+  height: 240px;
   object-fit: cover;
   border-radius: 16px;
+}
+
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  border-radius: 5em;
+  padding: 2px 8px;
+}
+
+.label {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
 
 .bullets {
