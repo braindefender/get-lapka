@@ -230,6 +230,16 @@ a:visited {
   gap: 10px;
 }
 
+.preview {
+  object-fit: cover;
+  width: 1150px;
+  height: 420px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
+
 @media only screen and (max-width: 800px) {
   body {
     flex-direction: column;
